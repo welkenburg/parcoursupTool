@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import csv
 import datetime
+import webbrowser
 
 file = ""
 with open("pc.html", "r") as pc:
