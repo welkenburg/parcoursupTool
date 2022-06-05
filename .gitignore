@@ -1,3 +1,6 @@
 *.csv
 *.ods
 *.html
+*.pem
+*.der
+__pycache__
