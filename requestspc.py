@@ -11,12 +11,12 @@ import datetime
 # os.environ["HTTPS_PROXY"] = proxy
 # os.environ["REQUESTS_CA_BUNDLE"] = 'certificate.pem'
 
-user = input("entrez votre numéro parcoursup :\n")
-password = input("entrez votre mot de passe :\n")
+with open("creds","r") as creds:
+	user, password = creds.readlines()
 
 payload = {
 	'ACTION' : '1',
-	'g_cn_cod' : user,
+	'g_cn_cod' : user.removesuffix('\n'),
 	'g_cn_mot_pas':password
 }
 
@@ -81,6 +81,6 @@ with requests.Session() as s:
 
 		data.append(row)
 
-	with open("data.csv", "a") as out:
+	with open("data2.csv", "a") as out:
 		writer = csv.DictWriter(out, fieldnames=fieldNames)
 		writer.writerows(data)
