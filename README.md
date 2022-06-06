@@ -1,9 +1,32 @@
-# comment utiliser l'outil (pour l'instant)
+# parcoursupTool
 
-1. Lançez le programme python (Si vous n'avez pas installé python, les librairies csv et beautifulsoup voici un lien tuto https://www.youtube.com/watch?v=Rvjmu8Ilicw)
+## Purpose
 
-2. rentrez vos identifiants ( ils ne sont pas stockés en dehors du programme ) 
+Retrieve [Parcoursup](https://www.parcoursup.fr/) offers for a given student.
 
-3. Ouvrez le fichier `data.csv` fraîchement créé avec Excel ou un autre tableur
+## Prerequisites
 
-> sentez vous libre d'améliorer l'outil comme vous voulez
+The following programs must be installed:
+
+- Python 3
+- Pip
+
+## Usage
+
+### Install dependencies
+
+```bash
+$ pip install -r requirements.txt
+```
+
+To update them, run:
+
+```bash
+$ pip install --upgrade -r requirements.txt
+```
+
+### Run
+
+```bash
+$ python main.py
+```
