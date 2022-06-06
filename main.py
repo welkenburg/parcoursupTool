@@ -20,7 +20,7 @@ ttk.Label(frm, text="mot de passe: ").grid(column=0, row=1)
 # password
 ttk.Label(frm, text="nom du fichier: ").grid(column=0, row=2)
 tx = ttk.Entry(frm)
-tx.insert(0, "data2.csv")
+tx.insert(0, "data.csv")
 tx.grid(column=1, row=2)
 
 # buttons
