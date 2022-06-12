@@ -50,7 +50,7 @@ def run(user, passwd, filename):
 	# for each choices, scrap the numbers
 	for c in choices:
 		row = {}
-		row["date"] = datetime.datetime.now()
+		row["date"] = datetime.datetime.now().strftime('%d/%m/%y')
 		row["nom"] = c.find_all("td")[2].string.strip()
 
 		try:
